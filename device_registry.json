@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "last_updated": "2025-11-06",
+  "description": "Device registry for OTA access control based on MAC address",
+  "devices": [
+    {
+      "mac_address": "D0:CF:13:19:CA:98",
+      "customer_name": "Unknown Customer",
+      "customer_id": "KH001",
+      "device_name": "Otto Robot ESP32-S3 #1",
+      "allowed_versions": [
+        "1.9.2"
+      ],
+      "current_version": "unknown",
+      "ota_enabled": true,
+      "registration_date": "2025-11-06",
+      "last_update": "2025-11-06",
+      "notes": "Added via Web UI on 2025-11-06 00:29:08"
+    }
+  ],
+  "firmware_versions": {
+    "1.9.2": {
+      "url": "https://raw.githubusercontent.com/nguyenconghuy2904-source/robot-otto-firmware/main/esp32-s3-robot-otto.bin",
+      "file_size": 4765616,
+      "release_date": "2025-11-06",
+      "mandatory": false,
+      "description": "ESP32-S3 Otto Robot Firmware"
+    },
+    "1.0.0": {
+      "url": "https://raw.githubusercontent.com/nguyenconghuy2904-source/robot-otto-firmware/main/esp32-s3-robot-otto.bin",
+      "file_size": 4765616,
+      "release_date": "2025-10-20",
+      "mandatory": false,
+      "description": "Initial release"
+    }
+  },
+  "access_control": {
+    "require_mac_verification": true,
+    "allow_unknown_devices": false,
+    "auto_register_new_devices": false,
+    "notify_on_unauthorized_access": true
+  }
+}
